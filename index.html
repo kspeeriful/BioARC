@@ -98,6 +98,7 @@
       attribution: 'Map data &copy; OpenStreetMap contributors'
     }).addTo(map);
 
+    // Define partner data
     const partners = [
       { name: "University of Michigan, USA", lat: 42.2808, lng: -83.7430 },
       { name: "Universidade do Estado de Mato Grosso, Brazil", lat: -14.8376, lng: -56.0785 },
@@ -118,9 +119,32 @@
       { name: "Universidade de São Paulo, Brazil", lat: -23.5505, lng: -46.6333 }
     ];
 
-    partners.forEach(p => {
-      L.marker([p.lat, p.lng]).addTo(map).bindPopup(p.name);
+    // Custom marker icon with the color #D2B39D
+    var customIcon = L.divIcon({
+      className: 'custom-icon',
+      html: `<div style="background-color: #D2B39D; border-radius: 50%; width: 20px; height: 20px;"></div>`,
+      iconSize: [20, 20],
+      iconAnchor: [10, 10] // Anchor to the center of the circle
     });
+
+    // Add markers to the map and create legend
+    var legendHTML = '<div><strong>Partners</strong><ul>';
+    partners.forEach(p => {
+      L.marker([p.lat, p.lng], { icon: customIcon }).addTo(map).bindPopup(p.name);
+      legendHTML += `<li>${p.name}</li>`;
+    });
+
+    // Close the list and set the legend content
+    legendHTML += '</ul></div>';
+
+    // Create the legend on the left side of the map
+    var legend = L.control({ position: 'topleft' });
+    legend.onAdd = function() {
+      var div = L.DomUtil.create('div', 'info legend');
+      div.innerHTML = legendHTML;
+      return div;
+    };
+    legend.addTo(map);
   }
 </script>
 </body>
