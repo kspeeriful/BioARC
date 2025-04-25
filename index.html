@@ -91,7 +91,8 @@
   <footer class="footer">
     <p>&copy; 2025 BioARC Consortium. All rights reserved.</p>
   </footer>
-  <script>
+<script>
+  window.onload = function() {
     var map = L.map('partner-map').setView([0, -60], 2);
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: 'Map data &copy; OpenStreetMap contributors'
@@ -120,6 +121,7 @@
     partners.forEach(p => {
       L.marker([p.lat, p.lng]).addTo(map).bindPopup(p.name);
     });
-  </script>
+  }
+</script>
 </body>
 </html>
