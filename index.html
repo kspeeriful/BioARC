@@ -13,12 +13,12 @@
       color: #333;
     }
     header {
-      background: #008080;
+      background: #228B22;
       color: #fff;
       padding: 1rem 2rem;
     }
     nav {
-      background: #A0D6B4;
+      background: #9DC183;
       padding: 0.5rem 2rem;
     }
     nav a {
@@ -36,7 +36,7 @@
     .footer {
       text-align: center;
       padding: 1rem;
-      background: #2c7a7b;
+      background: #228B22;
       color: white;
     }
     .image-gallery img {
@@ -56,7 +56,7 @@
 <body>
   <header>
     <h1>BioARC: Biorepositories for Adaptive Resilience to Climate</h1>
-    <p>Early-Warning Systems for Zoonotic Spillover in the Americas</p>
+    <p>Building Early-Warning Systems for Zoonotic Spillover in the Americas</p>
   </header>
   <nav>
     <a href="index.html">Home</a>
@@ -69,9 +69,10 @@
       <h2>Project Description</h2>
       <p>
         BioARC (Biorepositories for Adaptive Resilience to Climate) is a multinational, transdisciplinary
-        initiative focused on building early-warning systems for zoonotic diseases across the Americas. Our goal
-        is to co-create infrastructure and best practices for sample collection, analysis, and sharing to improve
-        pandemic preparedness.
+        initiative focused on building early-warning systems for zoonotic diseases across the Americas. We are a network of 
+        biologists, virologists, social scientists, public health experts, epidemiologists, data scientists, museum
+        scientists, and stakeholders. Our goal is to co-create infrastructure and best practices for sample collection, 
+        analysis, and sharing to improve pandemic preparedness powered by natural history collections and biorepositories. 
       </p>
     </section>
     <section id="gallery">
@@ -97,10 +98,23 @@
     }).addTo(map);
 
     const partners = [
-      { name: "UMich", lat: 42.2808, lng: -83.7430 },
-      { name: "UNEMAT, Brazil", lat: -14.8376, lng: -56.0785 },
-      { name: "CISeAL, Ecuador", lat: -0.2299, lng: -78.5249 },
-      { name: "BVEC, Belize", lat: 17.1899, lng: -88.4976 }
+      { name: "University of Michigan, USA", lat: 42.2808, lng: -83.7430 },
+      { name: "Universidade do Estado de Mato Grosso, Brazil", lat: -14.8376, lng: -56.0785 },
+      { name: "Centro de Investigación para la Salud en América Latina, Ecuador", lat: -0.2299, lng: -78.5249 },
+      { name: "Belize Vector Ecology Center, Belize", lat: 17.1899, lng: -88.4976 },
+      { name: "Northern Arizona University, USA", lat: 35.1803, lng: -111.6540 },
+      { name: "University of New Mexico, USA", lat: 35.0908, lng: -106.6210 },
+      { name: "University of Oklahoma, USA", lat: 35.2059, lng: -97.4457 },
+      { name: "University of Kansas, USA", lat: 38.9522, lng: -95.2560 },
+      { name: "Colección Privada y Centro de Rescate de Fauna Silvestre El Ocotal, Honduras", lat: 13.4667, lng: -83.0167 },
+      { name: "Centro Universitario de Zacapa de la Universidad de San Carlos de Guatemala, Guatemala", lat: 14.9700, lng: -89.5397 },
+      { name: "Universidad del Valle de Guatemala, Guatemala", lat: 14.6091, lng: -90.5133 },
+      { name: "University of Notre Dame, USA", lat: 41.7030, lng: -86.2390 },
+      { name: "Facultad de Ciencias, Universidad de la República, Uruguay", lat: -34.9011, lng: -56.1910 },
+      { name: "Instituto de Investigaciones Biológicas Clemente Estable, Uruguay", lat: -34.9037, lng: -56.1915 },
+      { name: "Instituto Todos pela Saúde, Brazil", lat: -23.5505, lng: -46.6333 },
+      { name: "Universidade Federal do Paraná, Brazil", lat: -25.4386, lng: -49.2694 },
+      { name: "Universidade de São Paulo, Brazil", lat: -23.5505, lng: -46.6333 }
     ];
 
     partners.forEach(p => {
