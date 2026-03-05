@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — BioARC</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="BioARC_Logo_transparent.png" type="image/png" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><div class="container navbar">
+    <a href="index.html" class="brand"><img src="BioARC_Logo_transparent.png" alt="BioARC logo"/><span>BioARC</span></a>
+    <nav class="nav"><a href="index.html">Home</a><a class="active" href="about.html">About</a><a href="consortium.html">Our Consortium</a><a href="resources.html">Resources</a><a href="get-involved.html">Get Involved</a></nav>
+  </div></header>
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <span class="kicker">About</span>
+        <h1>Why BioARC?</h1>
+        <p class="muted">Biorepositories preserve time‑stamped, georeferenced records of biodiversity—the substrate for understanding emergence and spread of zoonoses. BioARC coordinates specimen‑based surveillance and bridges museums, public health, and communities to enable earlier detection and better response.</p>
+        <div class="hr"></div>
+        <div class="grid cards">
+          <article class="card"><h3>Mission</h3><p>Strengthen adaptive, resilient capacity to detect and mitigate wildlife‑borne pathogens through standardized sampling, biobank networks, and open data.</p></article>
+          <article class="card"><h3>Approach</h3><p>Transdisciplinary teams integrate field sampling, specimen curation, molecular screening, ecological modeling, and risk communication.</p></article>
+          <article class="card"><h3>Values</h3><p>Equity, reciprocity, open science, and long‑term stewardship of specimens and data.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container flex" style="justify-content:space-between;"><span>© <span id="year"></span> BioARC</span><span class="muted">About</span></div></footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

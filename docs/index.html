@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BioARC — Biorepositories build Adaptive, Resilient Capacity</title>
+  <meta name="description" content="Transdisciplinary solutions for early detection of wildlife zoonoses in the Americas." />
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="BioARC_Logo_transparent.png" type="image/png" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" role="banner">
+    <div class="container navbar">
+      <a href="index.html" class="brand" aria-label="BioARC home">
+        <img src="BioARC_Logo_transparent.png" alt="BioARC logo" />
+        <span>BioARC</span>
+      </a>
+      <nav class="nav" aria-label="Primary">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="consortium.html">Our Consortium</a>
+        <a href="resources.html">Resources</a>
+        <a href="get-involved.html">Get Involved</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div>
+          <span class="kicker">Biorepositories build Adaptive, Resilient Capacity</span>
+          <h1>Transdisciplinary solutions for early detection of wildlife zoonoses in the Americas.</h1>
+          <p>BioARC connects museums, field biologists, modelers, public health, and communities to strengthen early warning systems for zoonotic spillover. We coordinate sampling, data standards, and rapid-response capacity across the Americas.</p>
+          <div class="btns">
+            <a class="btn primary" href="about.html">Learn more</a>
+            <a class="btn outline" href="get-involved.html">Get involved</a>
+          </div>
+        </div>
+        <div class="logo-ring">
+          <img src="BioARC_Logo_transparent.png" alt="BioARC circular mark with hands supporting biodiversity silhouettes"/>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid cards">
+          <article class="card">
+            <span class="badge">Protocol</span>
+            <h3>Standardized field-to-freezer workflows</h3>
+            <p>From vouchering to metadata, we promote interoperable practices that make specimens and sequences findable and reusable.</p>
+          </article>
+          <article class="card">
+            <span class="badge">Data</span>
+            <h3>Linked data across specimens &amp; pathogens</h3>
+            <p>Connecting museum records with pathogen screening and environmental context to power predictive models.</p>
+          </article>
+          <article class="card">
+            <span class="badge">Capacity</span>
+            <h3>Training &amp; community partnerships</h3>
+            <p>Hands‑on workshops, multilingual resources, and equitable collaborations across the Americas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="container flex" style="justify-content:space-between;">
+      <span>© <span id="year"></span> BioARC</span>
+      <span class="muted">Built with open web standards</span>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
