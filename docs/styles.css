@@ -1,0 +1,32 @@
+
+:root{
+  --bg:#0b1b2b; --fg:#ffffff; --accent:#59c3c3; --muted:#b9d6e8;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif;color:#223;}
+header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e5e7eb;z-index:50}
+.container{max-width:1100px;margin:0 auto;padding:0 1rem}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+.nav a{color:#1f2937;text-decoration:none;margin-right:1rem;font-weight:600}
+.nav-right{display:flex;align-items:center;gap:.75rem}
+.lang-select{padding:.4rem .6rem;border:1px solid #cbd5e1;border-radius:6px;background:#fff}
+.hero{background:linear-gradient(135deg,var(--bg),#10324f); color:var(--fg);padding:6rem 0}
+.hero h1{font-size:clamp(1.8rem,2.8vw,2.6rem);margin:0 0 .75rem}
+.hero p{font-size:clamp(1rem,1.2vw,1.2rem);color:#e6f0f7;margin:0 0 1.25rem}
+.cta{background:var(--accent);color:#053b3d;padding:.7rem 1rem;border-radius:8px;text-decoration:none;font-weight:700}
+main{padding:2rem 0}
+footer{border-top:1px solid #e5e7eb;padding:1.5rem 0;color:#475569;font-size:.9rem}
+
+/* About map layout */
+.map-layout{display:grid;grid-template-columns:1.4fr 1fr;gap:1rem}
+#map{height:540px;border:1px solid #e5e7eb;border-radius:12px}
+.partner-list{list-style:none;padding:0;margin:0;max-height:540px;overflow:auto;border:1px solid #e5e7eb;border-radius:12px}
+.partner-list li{padding:.6rem .75rem;border-bottom:1px solid #eef2f7;line-height:1.35}
+.partner-list li:last-child{border-bottom:none}
+.partner-list li.highlight{font-weight:800;background:#f5fbfb}
+.section-note{color:#64748b;font-size:.9rem;margin:.5rem 0 1rem}
+
+@media (max-width: 900px){
+  .map-layout{grid-template-columns:1fr}
+  #map{height:420px}
+}
