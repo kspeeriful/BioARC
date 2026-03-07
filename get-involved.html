@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Get Involved — BioARC</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="BioARC_Logo_transparent.png" type="image/png" />
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <div>
+      <a href="index.html" aria-label="BioARC home" style="display:inline-flex;align-items:center;gap:.5rem">
+        <img src="BioARC_Logo_transparent.png" alt="BioARC logo" width="36" height="36" />
+        <strong>BioARC</strong>
+      </a>
+    </div>
+    <nav class="nav-right">
+      <a href="index.html" data-i18n="nav.home">Home</a>
+      <a href="about.html" data-i18n="nav.about">About</a>
+      <a href="consortium.html" data-i18n="nav.consortium">Our Consortium</a>
+      <a href="resources.html" data-i18n="nav.resources">Resources</a>
+      <a href="get-involved.html" data-i18n="nav.getinvolved">Get Involved</a>
+      <select id="lang-select" class="lang-select" aria-label="Language selector">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="pt-BR">Português (Brasil)</option>
+      </select>
+    </nav>
+  </div>
+</header>
+
+<main class="container page">
+  <h1>Get Involved</h1>
+  <p class="section-note">Join the network, share resources, or co-host a workshop.</p>
+  <div class="card">
+    <p><strong>Email:</strong> <a href="mailto:info@bioarc.org">info@bioarc.org</a> (update as needed)</p>
+    <p>We welcome museums, labs, field programs, agencies, and community organizations across the Americas.</p>
+  </div>
+</main>
+<footer><div class="container">© <span id="year"></span> BioARC</div></footer>
+<script src="i18n.js"></script>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
